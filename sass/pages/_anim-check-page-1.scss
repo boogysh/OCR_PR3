@@ -1,14 +1,4 @@
-// .item_card_menu:active{
-//     .check{
-//         transform: translateX(0rem);
-//         & img{
-//             transform: rotate(0deg);
-//         }
-//         & span{
-//             opacity: 0;
-//         }
-//     }
-// }   
+
 
 //-----min-width-base---- 
 
@@ -18,7 +8,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__3:active{
-                .dots{
+            .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -34,7 +24,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__4:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -51,7 +41,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__4{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -70,7 +60,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__5:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h3{
                         opacity: 1;
@@ -89,7 +79,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__8:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h3{
                         opacity: 1;
@@ -108,7 +98,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__9:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -133,12 +123,13 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__3:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
-                    &__h4{
+                     &__h4{
                         opacity: 1;
                     }
                 }
+
             }
         }
         
@@ -149,9 +140,25 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__4:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+//-----page-1 item-5 for h3
+@media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:345px){
+    .item_card_menu{
+        &.item_card_menu_page_1{
+            &.item_card_menu__5:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
                         opacity: 1;
                     }
                 }
@@ -165,7 +172,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__5:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -176,12 +183,28 @@
         
     }
 }
-//-----page-1 item-8 for h4
-@media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:330px){
+//-----page-1 item-8 for h3
+@media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:355px){
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__8:active{
-                & .dots{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+//-----page-1 item-8 for h4
+@media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:350px){
+    .item_card_menu{
+        &.item_card_menu_page_1{
+            &.item_card_menu__8:active{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -197,7 +220,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__9:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -218,7 +241,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__2:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h3{
                         opacity: 1;
@@ -233,10 +256,26 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__3:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----page-1 item-4 for h3
+@media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:290px){
+    .item_card_menu{
+        &.item_card_menu_page_1{
+            &.item_card_menu__4:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                        transition-delay: 0.22s;
                     }
                 }
             }
@@ -248,7 +287,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__4:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -263,7 +302,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__4{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -279,7 +318,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__5:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h3{
                         opacity: 1;
@@ -294,7 +333,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__5:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -309,7 +348,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__8:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h3{
                         opacity: 1;
@@ -324,7 +363,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__8:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -339,7 +378,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__8:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h3{
                         opacity: 1;
@@ -355,7 +394,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__9:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;
@@ -372,7 +411,7 @@
     .item_card_menu{
         &.item_card_menu_page_1{
             &.item_card_menu__4:active{
-                & .dots{
+                .check__dots{
                     opacity: 1;
                     &__h4{
                         opacity: 1;

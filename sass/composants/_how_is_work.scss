@@ -3,13 +3,11 @@
     width: 90%;
     @include flex__col_x_y;
     flex-wrap: wrap;
-    
     & h2{
         width: 100%;
         margin-bottom: 2rem;
         margin-top: 3rem;
         font-size: 1.6rem;
-        
     }
     &__card{
         margin-bottom:1.5rem;
@@ -17,8 +15,6 @@
         height: auto;
         width: 100%;
         position: relative;
-        
-        
         &__nr{
             @include flex_xy;
             flex-shrink: 0;
@@ -28,8 +24,6 @@
             background-color: $primary;
             position: absolute;
             left: 0;
-            
-           
         }   
         &__content{
             @include flex_y;
@@ -39,9 +33,6 @@
             margin-left: 1rem;
             padding: 1.7rem 0;
             padding-left: 2rem;
-            
-            
-            
             box-shadow: 0 0 10px lightgrey;
             transition: all 0.3s;
             &:hover{
@@ -77,10 +68,9 @@
                 height: 1.5rem;
             }
             &__content{
-                
-                
+                border-radius: 1rem;
                 padding: 1.4rem 0;
-                padding-left: 1.8rem;
+                padding-left: 1.6rem;
                 & i{
                     transform: scale(1);
                     margin-left: 0rem;

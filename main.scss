@@ -1,3 +1,4 @@
+
 // base
 @import "./sass/base/base";
 @import "./sass/base/normalise";
@@ -6,8 +7,7 @@
 @import "./sass/utils/mixins";
 // composants
 @import "./sass/composants/body_main";
-@import "./sass/composants/restaurants_section";
-@import "./sass/composants/restaurants_header";
+@import "./sass/composants/restaurants_header_&_section";
 @import "./sass/composants/explorer_and_btn";
 @import "./sass/composants/how_is_work";
 @import "./sass/composants/restaurants_card";

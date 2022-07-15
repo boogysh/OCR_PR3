@@ -32,6 +32,7 @@
    background:$gradient_bottom_second_primary;
    display: inline-block;
    animation: loader-animation 0.9s infinite ease-in-out;
+   
    animation-delay: 0.1s;
    z-index: 999;
    &--animation1{

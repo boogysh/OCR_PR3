@@ -16,7 +16,6 @@
         width: 100%;
         height: auto;
     }
-
     &__card{
         width: 90%;
         height: 260px;
@@ -41,10 +40,7 @@
                 width: 100%;
                 height:100%;
                 object-fit: cover;
-
             }
-
-
         }
         &__info{
             @include flex__col_y;
@@ -63,7 +59,6 @@
                 font-size: 1.2rem;
                 font-weight: 400;
             }
-
         }
         &__new{
             background: $third;
@@ -77,13 +72,7 @@
             border-radius: 0.2rem;
         }
     }
-
-
 }
-
-
-
-
 .heart{
     width: 1.5rem;
     height:1.5rem;
@@ -94,7 +83,6 @@
     &__white{
         width: 100%;
     }
-        
     &__primary{
         position: absolute;
         right: 0rem;
@@ -112,7 +100,6 @@
         padding-bottom: 1rem;
         & h2{
             margin-top: 2.5rem;
-            
             font-size: 1.3rem;
         }
         &__card{
