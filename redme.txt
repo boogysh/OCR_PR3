@@ -1,7 +1,3 @@
-.check .dots  --> .check_dots
-
-in menu 1-4 dots -->  check-dots
-in menu_card  dots -->  check-dots
-anim 1-4      dots -->  check-dots
+la version 6.4 est la dernière et elle est englobée dans la branche main
 
 
