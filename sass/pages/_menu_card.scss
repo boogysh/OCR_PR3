@@ -5,27 +5,27 @@
     background-color: #f2f2f2;
     border-radius: 2.5rem 2.5rem 0 0;
     position: relative;
-    // top: 30vh;
+
 }
 .menu_card{
     width: 90%;
-    height: auto;
+    height: 100%;
     & .titre{
         @include flex_x;
         justify-content:space-between;
-        
+
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         width: 100%;
-        
-        
-        
-        
+
+
+
+
         & h1{
-            font-family: 'Shrikhand', cursive; 
+            font-family: 'Shrikhand', cursive;
             font-size: 1.6rem;
             font-weight: 300;
-            
+
         }
         & .heart{
             margin-right: 1rem;
@@ -35,9 +35,9 @@
             margin-right: 0.5rem;
 
         }
-        
+
     }
-   
+
 }
 .group_card{
     margin-bottom: 2.5rem;
@@ -84,7 +84,7 @@
         // bottom: 14%;
         bottom: 0.5rem;
     }
-}  
+}
 
 @media all and (min-width:$min-width_mobile_small) and (max-width:$max-width_mobile_small){
     .container_menu_card{
@@ -101,14 +101,14 @@
                 width: 1.2rem;
                 height: 1.2rem;
                 margin-right:0.5rem;
-            } 
+            }
             & .heart__page{
                 top: 2.5rem;
                 margin-right: 0.75rem;
             }
         }
     }
-    
+
     .group_card{
         margin-bottom: 2rem;
         & h2{
@@ -128,11 +128,11 @@
         }
         & .price{
             font-size: 0.9rem;
-            
-            
+
+
         }
     }
-    
+
 }
 @media all and (min-width:$min-width_mobile_large) and (max-width:$max-width_mobile_large){
     .menu_card{
@@ -147,8 +147,8 @@
                 width: 1.8rem;
                 height: 1.8rem;
                 right: 2.5rem;
-                
-            } 
+
+            }
             & .heart__page{
                 top: 3.4rem;
                 margin-right: 0rem;
@@ -178,7 +178,7 @@
         & .price{
             font-size: 1.2rem;
             bottom: 0.7rem;
-            
+
             right: 1.2rem;
         }
     }
@@ -197,8 +197,8 @@
                 width: 2rem;
                 height: 2rem;
                 right: 2.5rem;
-            } 
-                
+            }
+
             & .heart__page{
                 top: 4.3rem;
                 margin-right: 0.65rem;
@@ -235,8 +235,21 @@
 
 }
 @media all and (min-width:$min-width_desktop_small) and (max-width:$max-width_desktop){
+
+    .container_menu_card{
+        background-color: transparent;
+        width: 55%;
+        height: auto;
+        
+    }
     .menu_card{
-        width: 95%;
+
+        width: 90%;
+        height: 100%;
+        z-index: 3;
+
+
+
         & .titre{
             margin-top: 2.5rem;
             margin-bottom: 2.5rem;
@@ -247,7 +260,7 @@
                 width: 2.2rem;
                 height: 2.2rem;
                 right: 2.5rem;
-            } 
+            }
             & .heart__page{
                 top: 2.5rem;
                 margin-right: 1.2rem;
@@ -279,7 +292,7 @@
             font-size: 1.4rem;
             bottom: 1.5rem;
             right: 2rem;
-            
+
         }
     }
 

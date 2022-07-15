@@ -3,6 +3,7 @@ footer{
     width: 100%;
     height: auto;
     background-color: lighten($color: black, $amount: 20);
+    z-index: 10;
 }
 .container_footer{
     width: 90%;
@@ -87,7 +88,7 @@ footer{
         }
     }
 }
-@media all and (min-width:$min-width_desktop) and (max-width:$max-width_desktop){
+@media all and (min-width:$min-width_desktop_small) and (max-width:$max-width_desktop){
     .container_footer{
         flex-direction: row;
         flex-wrap: wrap;
