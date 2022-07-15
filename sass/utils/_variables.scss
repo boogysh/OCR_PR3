@@ -1,0 +1,22 @@
+$primary:#9356DC;
+$second:#FF79DA;
+$third:#99E2D0;
+$gradient_bottom_second_primary:linear-gradient(to bottom, $second, $primary);
+$lighten_gradient_bottom_second_primary:linear-gradient(
+to bottom, lighten($second,5),lighten($primary,5));
+
+$min-width_mobile_small:200px;
+$max-width_mobile_small:369px;
+
+$min-width_mobile_large:540px;
+$max-width_mobile_large:766px;
+
+$min-width_tablette:767px;
+$max-width_tablette:992px;
+//----------------------------
+$min-width_desktop_small:993px;
+
+//---------------------------
+$min-width_desktop:1181px;
+$max-width_desktop:9999px;
+

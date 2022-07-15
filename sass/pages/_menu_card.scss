@@ -1,0 +1,286 @@
+.container_menu_card{
+    @include flex__col_x_y;
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 2.5rem 2.5rem 0 0;
+    position: relative;
+    // top: 30vh;
+}
+.menu_card{
+    width: 90%;
+    height: auto;
+    & .titre{
+        @include flex_x;
+        justify-content:space-between;
+        
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        
+        
+        
+        
+        & h1{
+            font-family: 'Shrikhand', cursive; 
+            font-size: 1.6rem;
+            font-weight: 300;
+            
+        }
+        & .heart{
+            margin-right: 1rem;
+        }
+        & .heart__page{
+            top:2.9rem;
+            margin-right: 0.5rem;
+
+        }
+        
+    }
+   
+}
+.group_card{
+    margin-bottom: 2.5rem;
+    height: auto;
+    & h2{
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        &::after{
+            content: "";
+            display: block;
+            width: 3.2rem;
+            height: 0.2rem;
+            background-color: $third;
+            margin-top: 0.2rem;
+        }
+    }
+    & li{
+        background-color: #fff;
+        list-style-type: none;
+        padding: 0.8rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+.item_card_menu{
+    position: relative;
+    & h3{
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+        width: 80%;
+    }
+    & h4{
+        font-weight: 300;
+        font-size: 1rem;
+        width: 80%;
+    }
+    & .price{
+        font-weight: 600;
+        position: absolute;
+        // right: 5%;
+        right: 1.2rem;
+        // bottom: 14%;
+        bottom: 0.5rem;
+    }
+}  
+
+@media all and (min-width:$min-width_mobile_small) and (max-width:$max-width_mobile_small){
+    .container_menu_card{
+        border-radius: 2rem 2rem 0 0;
+    }
+    .menu_card{
+        & .titre{
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            & h1{
+                font-size: 1.25rem;
+            }
+            .heart{
+                width: 1.2rem;
+                height: 1.2rem;
+                margin-right:0.5rem;
+            } 
+            & .heart__page{
+                top: 2.5rem;
+                margin-right: 0.75rem;
+            }
+        }
+    }
+    
+    .group_card{
+        margin-bottom: 2rem;
+        & h2{
+            font-size: 1rem;
+        }
+        & li{
+            margin-bottom:0.6rem;
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        & h4{
+            font-size: 0.9rem;
+        }
+        & .price{
+            font-size: 0.9rem;
+            
+            
+        }
+    }
+    
+}
+@media all and (min-width:$min-width_mobile_large) and (max-width:$max-width_mobile_large){
+    .menu_card{
+        width: 93%;
+        & .titre{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            & h1{
+                font-size: 1.8rem;
+            }
+            .heart{
+                width: 1.8rem;
+                height: 1.8rem;
+                right: 2.5rem;
+                
+            } 
+            & .heart__page{
+                top: 3.4rem;
+                margin-right: 0rem;
+            }
+        }
+    }
+    .group_card{
+        margin-bottom: 3rem;
+        & h2{
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        & li{
+            margin-bottom:1.2rem;
+            padding: 1rem;
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        & h4{
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        & .price{
+            font-size: 1.2rem;
+            bottom: 0.7rem;
+            
+            right: 1.2rem;
+        }
+    }
+
+}
+@media all and (min-width:$min-width_tablette) and (max-width:$max-width_tablette){
+    .menu_card{
+        width: 95%;
+        & .titre{
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+            & h1{
+                font-size: 2.2rem;
+            }
+            .heart{
+                width: 2rem;
+                height: 2rem;
+                right: 2.5rem;
+            } 
+                
+            & .heart__page{
+                top: 4.3rem;
+                margin-right: 0.65rem;
+            }
+        }
+    }
+    .group_card{
+        margin-bottom: 3rem;
+        & h2{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        & li{
+            margin-bottom:1.2rem;
+            padding: 1.5rem;
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+        & h4{
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        & .price{
+            font-size: 1.2rem;
+            bottom: 0.7rem;
+            right: 3%;
+        }
+    }
+
+}
+@media all and (min-width:$min-width_desktop_small) and (max-width:$max-width_desktop){
+    .menu_card{
+        width: 95%;
+        & .titre{
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            & h1{
+                font-size: 2.4rem;
+            }
+            .heart{
+                width: 2.2rem;
+                height: 2.2rem;
+                right: 2.5rem;
+            } 
+            & .heart__page{
+                top: 2.5rem;
+                margin-right: 1.2rem;
+            }
+        }
+    }
+    .group_card{
+        margin-bottom: 3rem;
+        & h2{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+        & li{
+            margin-bottom:1.2rem;
+            padding: 1.5rem;
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+        & h4{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        & .price{
+            font-size: 1.4rem;
+            bottom: 1.5rem;
+            right: 2rem;
+            
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+.btn_command{
+   
+    text-align: center;
+    background: $gradient_bottom_second_primary;
+    color: #f1f1f1;
+    padding: 1.2rem 3.5rem;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 3px 8px gray ;
+    transition: all 0.5s;
+    &:hover{
+        background: $lighten_gradient_bottom_second_primary;
+        box-shadow: 0 3px 10px darken($color: grey, $amount: 30);
+    }
+}
+@media all and (min-width:$min-width_mobile_small) and (max-width:$max-width_mobile_small){
+    .btn_command{
+        font-size: 1rem;
+        padding: 1rem 2.5rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+}
+@media all and (min-width:$min-width_mobile_large) and (max-width:$max-width_mobile_large){
+    .btn_command{
+        font-size: 1.3rem ;
+        padding: 1.2rem 4rem;
+       
+    }
+}
+@media all and (min-width:$min-width_tablette) and (max-width:$max-width_tablette){
+    .btn_command{
+        font-size: 1.3rem ;
+        padding: 1.3rem 4.5rem
+    }
+        
+}
+@media all and (min-width:$min-width_desktop_small) and (max-width:$max-width_desktop){
+    .btn_command{
+        font-size: 1.5rem ;
+        padding: 1.5rem 6rem
+    }
+
+}
