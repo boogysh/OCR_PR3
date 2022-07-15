@@ -1,57 +1,67 @@
-.loader{
-   width:9999px;
-   height:9999px;
+.loader {
+   width:100%;
+   height:100vh;
    position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0%;
+   right:0;
+   opacity: 1;
    z-index: 99;
    background: #f2f2f2;
-   animation: visibility-bg 0.9s forwards;
-   &__container{
+   animation: visibility-bg 0s forwards;     // ------animation start 1s
+   //0.9 s 
+   &_container{
       position: absolute;
-      top: 30%;
-      left: 50%;
+      top: 40%;
+      left:50%;
       transform: translate(-50%, -50%);
-      width: 300px;
-      height: 200px;
-      z-index: 999;
+      width: auto;
+      height: autopx;
       text-align: center;
-      animation: visibility-bg 0.9s forwards;
-      z-index: 998;
+      animation: loader 1s forwards;    //---animation start 1s
+      //0.9s
+      z-index: 99;
    }
-   &__element{
-      position: relative;
-      top: 25%;
-      width: 5px;
-      height: 60px;
-      background:$gradient_bottom_second_primary;
-      display: inline-block;
-      margin: 10px 0px;
-      animation: loader-animation 1.2s infinite ease-in-out;
-      z-index: 999;
-      
-   }
+}
+.element{
+   position: relative;
+   width: 4px;
+   height: 60px;
+   border-radius: 100%;
+   background:$gradient_bottom_second_primary;
+   display: inline-block;
+   animation: loader-animation 1.0s infinite ease-in-out;
+   animation-delay: 0.1;
+   z-index: 999;
    &--animation1{
-      animation-delay: 0.1s;
-   }
-   &--animation2{
       animation-delay: 0.2s;
    }
-   &--animation3{
+   &--animation2{
       animation-delay: 0.3s;
    }
-   &--animation4{
+   &--animation3{
       animation-delay: 0.4s;
    }
-   &--animation5{
+   &--animation4{
       animation-delay: 0.5s;
+   }
+   &--animation5{
+      animation-delay: 0.6s;
    }  
+   
 }
+
+   
+   
+
+
 
 @keyframes loader-animation {
     0%{
        transform: scaleY(0.7);
-       
       }
-    20%{
+   20%{
        transform: scaleY(1.5);
     }
     40%{
@@ -60,22 +70,49 @@
   
     100%{
        transform: scaleY(0.7);
+       
       }
        
        
 }
 @keyframes visibility-bg {
-  0%{
-   transform: translate(-50%,-50%);
+   
+   0%{
+   opacity: 1;
+   transform: translateY(0%);
   }
   99%{
-   transform: translate(-50%,-50%);
+  opacity: 1;
+  transform: translateY(0%);
   }
-  100%{
-   transform: translate(1000%,1000%);
-  }
+  
 
+100%{
+   opacity: 0;
+   transform: translateY(-100%);
+   }
 }
+
+@keyframes loader {
+   
+   0%{
+   opacity: 1;
+   transform: translate(-50%, -50%);
+  }
+  99%{
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  }
+  
+
+100%{
+   opacity: 0;
+   transform: translateY(-100%);
+   }
+}
+   
+
+
 
     
  

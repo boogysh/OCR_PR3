@@ -19,7 +19,7 @@
 
     &__card{
         width: 90%;
-        height: 280px;
+        height: 260px;
         position: relative;
         box-shadow: 0 0 8px grey;
         border-radius: 20px;
@@ -89,18 +89,12 @@
     height:1.5rem;
     position: absolute;
     right: 2rem;
-    // bottom: 3rem;
-
     border: none;
-    background-color:#fff;
-    &__page{
-        background-color: #f2f2f2;
-    }
+    background-color: transparent;
     &__white{
-        // position: absolute;
-        // right: 0rem;
         width: 100%;
     }
+        
     &__primary{
         position: absolute;
         right: 0rem;
@@ -113,7 +107,39 @@
     }
 }
 
-@media all and (min-width:$min-width_mobile_small) and (max-width:$max-width_mobile_small){
+@media all and (min-width:$min-width_mobile_small_menu_card) and (max-width:$max-width_mobile_small_menu_card){
+    .restaurants{
+        padding-bottom: 2rem;
+        & h2{
+            margin-top: 2.5rem;
+            
+            font-size: 1.3rem;
+        }
+        &__card{
+            border-radius: 15px;
+            height: 180px;
+            &__info{
+                & h3{
+                    font-size: 1rem;
+                }
+                & h4{
+                    font-size: 0.9rem;
+                }
+            }
+            &__new{
+                padding: 0.5rem 0.6rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .heart{
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-bottom: 0.5rem;
+        right: 1.5rem;
+    }
+}
+@media all and (min-width:$min-width_mobile_medium_menu_card) and (max-width:$max-width_mobile_medium_menu_card){
     .restaurants{
         padding-bottom: 2rem;
         & h2{
