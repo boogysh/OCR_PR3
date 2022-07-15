@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     background: #f2f2f2;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
     & h2{
         width: 90%;
         justify-content: flex-start;
@@ -109,7 +109,7 @@
 
 @media all and (min-width:$min-width_mobile_small_menu_card) and (max-width:$max-width_mobile_small_menu_card){
     .restaurants{
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         & h2{
             margin-top: 2.5rem;
             
@@ -141,7 +141,7 @@
 }
 @media all and (min-width:$min-width_mobile_medium_menu_card) and (max-width:$max-width_mobile_medium_menu_card){
     .restaurants{
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         & h2{
             margin-top: 2.5rem;
             font-size: 1.3rem;
@@ -172,6 +172,7 @@
 
 @media all and (min-width:$min-width_mobile_large) and (max-width:$max-width_mobile_large){
     .restaurants{
+        padding-bottom: 1.5rem;
        & h2{
             margin-top: 3rem;
             font-size: 2rem;
@@ -202,7 +203,7 @@
 }
 @media all and (min-width:$min-width_tablette) and (max-width:$max-width_tablette){
     .restaurants{
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         & h2{
              margin-top: 3.5rem;
              font-size: 2.1rem;
@@ -233,34 +234,33 @@
 
 @media all and (min-width:$min-width_desktop_small){
     .restaurants{
+        
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
-        padding-bottom: 4rem;
+        
+        padding-bottom: 2rem;
 
         & h2{
-            width: 95%;
+            width: 100%;
              margin-top: 3.5rem;
              font-size: 2rem;
+             margin-left: 2.5%;
          }
         & li{
-            width: 47.5%;
+            width:47.5%;
+            justify-content: flex-start;
+            &:nth-child(even){
+                justify-content: flex-end;
+            }
         }
-        & :nth-child(even){
-            // 
-            justify-content:flex-start;
-
-        }
-
-        & :nth-child(odd){
-            justify-content: flex-end;
-        }
-
-
+            
         &__card{
             width:97.5%;
+            
             height: 320px;
             margin-bottom: 2rem ;
+            justify-content: flex-start;
             
             &__info{
                 & h3{
@@ -291,6 +291,7 @@
 
 @media all and (min-width:$min-width_desktop) and (max-width:$max-width_desktop){
     .restaurants{
+        padding-bottom: 1rem;
         & h2{
             font-size: 2.1rem;
         }

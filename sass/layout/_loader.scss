@@ -9,7 +9,7 @@
    opacity: 1;
    z-index: 99;
    background: #f2f2f2;
-   animation: visibility-bg 0s forwards;     // ------animation start 1s
+   animation: visibility-bg 1s forwards;     // ------animation start 1s
    //0.9 s 
    &_container{
       position: absolute;
@@ -17,7 +17,7 @@
       left:50%;
       transform: translate(-50%, -50%);
       width: auto;
-      height: autopx;
+      height: auto;
       text-align: center;
       animation: loader 1s forwards;    //---animation start 1s
       //0.9s
@@ -31,8 +31,8 @@
    border-radius: 100%;
    background:$gradient_bottom_second_primary;
    display: inline-block;
-   animation: loader-animation 1.0s infinite ease-in-out;
-   animation-delay: 0.1;
+   animation: loader-animation 0.9s infinite ease-in-out;
+   animation-delay: 0.1s;
    z-index: 999;
    &--animation1{
       animation-delay: 0.2s;
