@@ -1,2 +1,8 @@
-corection :
-html  img_2__menu_2  ->  img_2 img_2__menu_2   reduire le code in scss   
+simplification pour desktop:
+
+1.suprimer img_2 du header restaurants
+2.hedear apliquer display none pour desktop
+3.utiliser bg-image pour main avec les classes main_menu_1, main_menu_2, main_menu_3, main_menu_4
+4.suprimer tout le code inutile et plein de conflits
+	- les images sont en pixels avec 105% de hauteur,l'affichage est corect mais avec des problemes
+5.rajout du loader pour chaque page
