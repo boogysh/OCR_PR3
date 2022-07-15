@@ -1,4 +1,4 @@
-// .item_card_menu:hover{
+// .item_card_menu:active{
 //     .check{
 //         transform: translateX(0rem);
 //         & img{
@@ -16,7 +16,7 @@
 @media all and (min-width:$min-width_base)  and (max-width:420px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__1:hover{
+            &.item_card_menu__1:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -31,7 +31,7 @@
 @media all and (min-width:$min-width_base)  and (max-width:410px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__3:hover{
+            &.item_card_menu__3:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -46,7 +46,7 @@
 @media all and (min-width:$min-width_base)  and (max-width:410px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__4:hover{
+            &.item_card_menu__4:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -62,7 +62,7 @@
 @media all and (min-width:$min-width_base)  and (max-width:385px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__4:hover{
+            &.item_card_menu__4:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -78,7 +78,7 @@
 @media all and (min-width:$min-width_base)  and (max-width:425px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__5:hover{
+            &.item_card_menu__5:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -94,7 +94,7 @@
 @media all and (min-width:$min-width_base)  and (max-width:390px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__7:hover{
+            &.item_card_menu__7:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -110,7 +110,7 @@
 @media all and (min-width:$min-width_base)  and (max-width:400px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__8:hover{
+            &.item_card_menu__8:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -126,7 +126,7 @@
 @media all and (min-width:$min-width_base)  and (max-width:440px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__8:hover{
+            &.item_card_menu__8:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -146,7 +146,7 @@
 @media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:355px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__1:hover{
+            &.item_card_menu__1:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -162,7 +162,7 @@
 @media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:355px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__3:hover{
+            &.item_card_menu__3:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -178,7 +178,7 @@
 @media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:345px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__4:hover{
+            &.item_card_menu__4:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -194,7 +194,7 @@
 @media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:345px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__5:hover{
+            &.item_card_menu__5:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -210,7 +210,7 @@
 @media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:345px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__7:hover{
+            &.item_card_menu__7:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -226,7 +226,7 @@
 @media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:335px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__8:hover{
+            &.item_card_menu__8:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -242,7 +242,7 @@
 @media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:370px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__8:hover{
+            &.item_card_menu__8:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -262,7 +262,7 @@
 @media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:319px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__1:hover{
+            &.item_card_menu__1:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -277,7 +277,7 @@
 @media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:319px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__3:hover{
+            &.item_card_menu__3:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -292,7 +292,7 @@
 @media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:319px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__4:hover{
+            &.item_card_menu__4:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -307,7 +307,7 @@
 @media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:290px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__4:hover{
+            &.item_card_menu__4:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -322,7 +322,7 @@
 @media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:319px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__5:hover{
+            &.item_card_menu__5:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -337,7 +337,7 @@
 @media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:305px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__7:hover{
+            &.item_card_menu__7:active{
                 .dots{
                     opacity: 1;
                     &__h4{
@@ -352,7 +352,7 @@
 @media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:319px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__8:hover{
+            &.item_card_menu__8:active{
                 .dots{
                     opacity: 1;
                     &__h3{
@@ -374,7 +374,7 @@
 @media all and (min-width:$min-width_desktop_small)  and (max-width:1060px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__8:hover{
+            &.item_card_menu__8:active{
                 .dots{
                     opacity: 1;
                     &__h4{

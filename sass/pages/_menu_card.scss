@@ -78,6 +78,7 @@
     align-items: center;
     background-color: #fff;
     overflow: hidden;
+    cursor: pointer;
     border-radius: 1rem;
     animation: anim-item-card 0.6s forwards ease-in-out;
     //      -----0.6s -----
@@ -231,7 +232,7 @@
 }
 
 //------------------------------------
-.item_card_menu:hover{
+.item_card_menu:active{
     .check{
         transform: translateX(0rem);
         & img{
@@ -242,10 +243,8 @@
         }
         
     }
-}   
-            
-//-----------------------------------------
-
+}
+//---------------------------
 
 @keyframes anim-group-card {
      0%{ transform: translateY(10%);}
