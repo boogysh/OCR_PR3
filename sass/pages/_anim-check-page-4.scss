@@ -1,0 +1,184 @@
+
+
+//-----min-width-base---- 
+
+//-----page-4 item-2 for h3
+@media all and (min-width:$min-width_base)  and (max-width:425px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__2:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----page-4 item-2 for h4
+@media all and (min-width:$min-width_base)  and (max-width:395px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__2:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h4{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----page-4 item-4 for h3
+@media all and (min-width:$min-width_base)  and (max-width:450px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__4:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----page-4 item-4 for h3 not-active
+@media all and (min-width:$min-width_base)  and (max-width:390px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__4{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//--------------------------
+
+
+//-----page-4 item-2 for h3
+@media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:350px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__2:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----page-4 item-2 for h4
+@media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:330px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__2:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h4{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----page-4 item-4 for h3
+@media all and (min-width:$min-width_mobile_medium_menu_card)  and (max-width:370px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__4:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//------------------------------------
+
+// mobile-small
+
+//-----page-4 item-2 for h3
+@media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:319px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__2:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----page-4 item-2 for h4
+@media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:300px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__2:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h4{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----page-4 item-4 for h3
+@media all and (min-width:$min-width_mobile_small_menu_card)  and (max-width:319px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__4:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//----------------------------------
+
+// desktop-small
+
+//-----page-4 item-4 for h3
+@media all and (min-width:$min-width_desktop_small)  and (max-width:1060px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__4:active{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+//--------------------------------------
+
+
+

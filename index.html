@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,14 +14,23 @@
     ></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ohmyfood</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="header">
       <h2>ohmyfood</h2>
-      <i class="fa-solid fa-arrow-left"></i>
     </header>
+    <!-- loader -->
+    <div class="loader">
+      <div class="loader_container">
+        <div class="element element--animation1"></div>
+        <div class="element element--animation2"></div>
+        <div class="element element--animation3"></div>
+        <div class="element element--animation4"></div>
+        <div class="element element--animation5"></div>
+      </div>
+    </div>
     <main>
       <section id="restaurants">
         <header id="header_restaurants">
@@ -38,6 +47,7 @@
               </p>
             </form>
           </div>
+          <!-- explorer -->
           <div class="explorer">
             <h1>Réservez le menu qui vous convient</h1>
             <h2>
@@ -45,6 +55,7 @@
             </h2>
             <div class="explorer__btn">Explorer nos restaurants</div>
           </div>
+          <!-- fonctionnement -->
           <div class="how_is_work">
             <h2>Fonctionnement</h2>
             <div class="how_is_work__card">
@@ -70,97 +81,122 @@
             </div>
           </div>
         </header>
-
-        <ul class="restaurants">
+        <!-- restaurants -->
+        <div class="restaurants">
           <h2>Restaurants</h2>
-
-          <li>
-            <a class="restaurants__card" href="menu_1.html">
-              <div class="restaurants__card__img">
-                <img
-                  class="restaurants__card__img__n1"
-                  src="images/restaurants/La_palette_du_gout-1.jpg"
-                  alt="La pallette du goût"
-                />
-              </div>
-              <div class="restaurants__card__info">
-                <h3>La palette du goût</h3>
-                <h4>Ménilmontant</h4>
-                <div class="heart heart__white">
-                  <img src="images/heart-1.png" alt="j'aime" />
+          <ul class="restaurants">
+            <li>
+              <a class="restaurants__card" href="menu_1.html">
+                <div class="restaurants__card__img">
+                  <img
+                    class="restaurants__card__img__n1"
+                    src="images/restaurants/La_palette_du_gout-1.jpg"
+                    alt="La pallette du goût"
+                  />
                 </div>
-                <div class="heart heart__primary">
-                  <img src="images/heart-2.png" alt="j'aime" />
+                <div class="restaurants__card__info">
+                  <h3>La palette du goût</h3>
+                  <h4>Ménilmontant</h4>
+                  <div class="heart">
+                    <img
+                      class="heart__white"
+                      src="images/heart-1.png"
+                      alt="j'aime"
+                    />
+                    <img
+                      class="heart__primary"
+                      src="images/heart-2.png"
+                      alt="j'aime"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="restaurants__card__new">Nouveau</div>
-            </a>
-          </li>
-          <li>
-            <a class="restaurants__card" href="menu_2.html">
-              <div class="restaurants__card__img">
-                <img
-                  class="restaurants__card__img__n2"
-                  src="images/restaurants/La_note_enchantee-2.jpg"
-                  alt="La pallette du goût"
-                />
-              </div>
-              <div class="restaurants__card__info">
-                <h3>La note enchantée</h3>
-                <h4>Charonne</h4>
-                <div class="heart heart__white">
-                  <img src="images/heart-1.png" alt="j'aime" />
+                <div class="restaurants__card__new">Nouveau</div>
+              </a>
+            </li>
+            <li>
+              <a class="restaurants__card" href="menu_2.html">
+                <div class="restaurants__card__img">
+                  <img
+                    class="restaurants__card__img__n2"
+                    src="images/restaurants/La_note_enchantee-2.jpg"
+                    alt="La pallette du goût"
+                  />
                 </div>
-                <div class="heart heart__primary">
-                  <img src="images/heart-2.png" alt="j'aime" />
+                <div class="restaurants__card__info">
+                  <h3>La note enchantée</h3>
+                  <h4>Charonne</h4>
+                  <div class="heart">
+                    <img
+                      class="heart__white"
+                      src="images/heart-1.png"
+                      alt="j'aime"
+                    />
+                    <img
+                      class="heart__primary"
+                      src="images/heart-2.png"
+                      alt="j'aime"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="restaurants__card__new">Nouveau</div>
-            </a>
-          </li>
-          <li>
-            <a class="restaurants__card" href="menu_3.html">
-              <div class="restaurants__card__img">
-                <img
-                  class="restaurants__card__img__n3"
-                  src="images/restaurants/A_la_francaise-2.jpg"
-                  alt="A la française"
-                />
-              </div>
-              <div class="restaurants__card__info">
-                <h3>À la française</h3>
-                <h4>Cité Rouge</h4>
-                <div class="heart heart__white">
-                  <img src="images/heart-1.png" alt="j'aime" />
+                <div class="restaurants__card__new">Nouveau</div>
+              </a>
+            </li>
+            <li>
+              <a class="restaurants__card" href="menu_3.html">
+                <div class="restaurants__card__img">
+                  <img
+                    class="restaurants__card__img__n3"
+                    src="images/restaurants/A_la_francaise-2.jpg"
+                    alt="A la française"
+                  />
                 </div>
-                <div class="heart heart__primary">
-                  <img src="images/heart-2.png" alt="j'aime" />
+                <div class="restaurants__card__info">
+                  <h3>À la française</h3>
+                  <h4>Cité Rouge</h4>
+                  <div class="heart">
+                    <img
+                      class="heart__white"
+                      src="images/heart-1.png"
+                      alt="j'aime"
+                    />
+                    <img
+                      class="heart__primary"
+                      src="images/heart-2.png"
+                      alt="j'aime"
+                    />
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="restaurants__card" href="menu_4.html">
-              <div class="restaurants__card__img">
-                <img
-                  class="restaurants__card__img__n4"
-                  src="images/restaurants/Le_delice_des_sens-3.jpg"
-                  alt="La delice des sens"
-                />
-              </div>
-              <div class="restaurants__card__info">
-                <h3>Le délice des sens</h3>
-                <h4>Folie-Méricourt</h4>
-                <div class="heart heart__white">
-                  <img src="images/heart-1.png" alt="j'aime" />
+              </a>
+            </li>
+            <li>
+              <a class="restaurants__card" href="menu_4.html">
+                <div class="restaurants__card__img">
+                  <img
+                    class="restaurants__card__img__n4"
+                    src="images/restaurants/Le_delice_des_sens-3.jpg"
+                    alt="La delice des sens"
+                  />
                 </div>
-                <div class="heart heart__primary">
-                  <img src="images/heart-2.png" alt="j'aime" />
+                <div class="restaurants__card__info">
+                  <h3>Le délice des sens</h3>
+                  <h4>Folie-Méricourt</h4>
+                  <div class="heart">
+                    <img
+                      class="heart__white"
+                      src="images/heart-1.png"
+                      alt="j'aime"
+                    />
+                    <img
+                      class="heart__primary"
+                      src="images/heart-2.png"
+                      alt="j'aime"
+                    />
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
@@ -179,13 +215,15 @@
               <h4>Devenir partenaire</h4>
             </a>
           </li>
+        </ul>
+        <ul>
           <li>
             <a href="#">
               <h4>Mentions légales</h4>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="mailto:ohmyfood@gmail.com?subject=Contactez_Nous">
               <h4>Contact</h4>
             </a>
           </li>

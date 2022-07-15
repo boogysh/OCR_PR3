@@ -1,0 +1,133 @@
+.explorer{
+    width: 100%;
+    height: auto;
+    @include flex__col_x_y;
+    text-align: center;
+    background-color:darken($color: white, $amount: 2);
+    & h1{
+        width: 80%;
+        font-size: 1.8rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    & h2{
+        width: 90%;
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    &__btn{
+        position: relative;
+        z-index: 1;
+        background: $gradient_bottom_second_primary;
+        color: #f1f1f1;
+        background-color: blue;
+        padding: 1.2rem 1.6rem;
+        border-radius: 999px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        box-shadow: 0 3px 8px gray ;
+        // transition: all 0.5s;
+        &:hover{
+            opacity: 1;
+            // background: $lighten_gradient_bottom_second_primary;
+            // box-shadow: 0 3px 10px darken($color: grey, $amount: 30);
+        }
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 999px;
+            position: absolute;
+            opacity:0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index:-1;
+            background: $lighten_gradient_bottom_second_primary;
+            box-shadow: 0 3px 10px darken($color: grey, $amount: 30);
+            transition: opacity 0.3s ease-in-out;
+            
+        }
+    }
+}
+
+@media all and (min-width:$min-width_mobile_small) and (max-width:$max-width_mobile_small){
+    .explorer{
+        & h1{
+            margin-top:0;
+            font-size: 1.4rem;
+            padding-top: 2.5rem;
+        }
+        & h2{
+            font-size: 1.2rem;
+        }
+        &__btn{
+            font-size: 0.9rem;
+            padding: 1rem 1.4rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+@media all and (min-width:$min-width_mobile_large) and (max-width:$max-width_mobile_large){
+    .explorer{
+        & h1{
+            font-size: 2rem;
+        }
+        & h2{
+            font-size: 1.4rem;
+        }
+        &__btn{
+            font-size: 1.4rem;
+            padding: 1.3rem 1.6rem;
+            margin-bottom: 4.3rem;
+            margin-top: 2.8rem;
+        }
+    }
+}
+@media all and (min-width:$min-width_tablette) and (max-width:$max-width_tablette){
+    .explorer{
+        & h1{
+            font-size: 2.1rem;
+        }
+        & h2{
+            font-size: 1.5rem;
+        }
+        &__btn{
+            font-size: 1.5rem;
+            padding: 1.3rem 1.6rem;
+            margin-bottom: 4.5rem;
+            margin-top: 3rem;
+        }
+    }
+}
+@media all and (min-width:$min-width_desktop_small) and (max-width:$max-width_desktop){
+    .explorer{
+        & h1{
+            padding-top: 4rem;
+            font-size: 2.5rem;
+        }
+        & h2{
+            font-size: 2rem;
+        }
+        &__btn{
+            font-size: 2rem;
+            padding: 1.5rem 3.5rem;
+            margin-bottom: 5rem;
+            margin-top: 3rem;
+        }
+    }
+
+}
+
+           
+

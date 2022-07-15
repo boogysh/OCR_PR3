@@ -1,0 +1,635 @@
+.container_menu_card{
+    @include flex__col_x_y;
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 2.5rem 2.5rem 0 0;
+    position: relative;
+}
+.menu_card{
+    width: 93%;
+    height: 100%;
+    &__titre{
+        @include flex_x;
+        justify-content:space-between;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        & h1{
+            font-family: 'Shrikhand', cursive;
+            font-size: 1.8rem;
+            font-weight: 300;
+            padding-left: 0.5rem;
+            z-index: 0;
+        }
+        & .heart__page{
+            top:2.5rem;
+            margin-right: 0.5rem;
+            width: 1.6rem;
+            height: 1.6rem;
+
+        }
+    }
+}
+
+//------------------------------------------------
+.group_card{
+    margin-bottom: 2.5rem;
+    height: auto;
+    transform: translateY(10%);
+    animation: anim-group-card 1s 1s
+    
+    forwards;
+    //  ----  1.2s  ------
+
+    // animation-delay: 1s;
+
+    & h2{
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+
+        &::after{
+            content: "";
+            display: block;
+            width: 3.1rem;
+            height: 0.2rem;
+            background-color: $third;
+            margin-top: 0.3rem;
+        }
+    }
+    & li{
+        list-style-type: none;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: auto;
+    }
+}
+.item_card_menu{
+    opacity: 0;
+    //---------------------- 0  for animation--------------
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 1rem;
+    animation: anim-item-card 0.6s forwards ease-in-out;
+    //      -----0.6s -----
+    // animation-delay: 1s;
+    &_titres{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        width: 40%;
+    }
+    & h3{
+        width: 25rem;
+        display: block;
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+        padding-left: 1rem;
+
+    }
+    & h4{
+        width: 25rem;
+        display: flex;
+        font-weight: 300;
+        font-size: 1rem;
+        padding-left: 1rem;
+        flex-wrap: nowrap;
+        flex-shrink:0;
+        letter-spacing: -0.7px;
+    }
+
+
+    //-----------------------------------------------------------------------------
+    $num-items: 9;
+    $anim-delay: 1s;
+    $anim-delay-item: 0.12s;
+
+    @for $i from 1 through $num-items{
+        &__#{$i}{
+            animation-delay: $anim-delay + $i * $anim-delay-item;
+        }
+    }
+    // &__1{
+    //     animation-delay: 1s;
+    // }
+    // &__2{
+    //     animation-delay: 1.12s;
+    // }
+    // &__3{
+    //     animation-delay: 1.24s;
+    // }
+    // &__4{
+    //     animation-delay: 1.36s;
+
+    // }
+    // &__5{
+    //     animation-delay: 1.48s;
+    // }
+    // &__6{
+    //     animation-delay: 1.6s;
+    // }
+    // &__7{
+    //     animation-delay: 1.72s;
+    // }
+    // &__8{
+    //     animation-delay:1.84s;
+    // }
+    // &__9{
+    //     animation-delay:1.96s;
+    // }
+}
+
+
+.check{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:auto;
+    height: 4.5rem;  //------- reglage pour responsive------
+    position: relative;
+    font-weight: 600;
+    transform: translateX(4rem); //----translate check-green a synchroniser avec __green width
+
+    transition: transform 0.4s ease-in-out;
+    &__dots{
+        opacity: 0;
+        display:block;
+        height:100%;
+        background-color: transparent;
+        width: 2rem;
+        // opacity: 0;
+        transition: all 0.15s;
+        transition-delay: 0.13s;
+        padding-bottom: 0.6rem;
+        position: relative;
+        &__h3{
+            opacity: 0;
+            display: block;
+            position:absolute;
+            top: 0rem;
+            background-color: #fff;
+            // background-color: yellow;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+            width: 5rem;
+            height: 1.5rem;
+            font-size: 1rem;
+            z-index: -2;
+        }
+        &__h4{
+            opacity: 0;
+            position: absolute;
+            top: 2.3rem;
+            display: block;
+            width: 100%;
+            height: 1.8rem;
+            padding-top: 0.25rem;
+            padding-bottom: 1.5rem;
+            font-size: 0.9rem;
+            background-color:#fff;
+            // background-color: green;
+        }
+    }
+    &__green{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:4rem;
+        height: 100%;
+        border-radius: 0 1rem 1rem 0;
+        background-color: $third;
+    }
+    &__price{
+        display:flex;
+        height: 30%;
+        width:3rem;
+        margin-top: 1.7rem;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: #fff;
+        z-index:3;
+        letter-spacing: -0.5px;
+    }
+    & img{
+        width: 1.3rem;
+        height:1.3rem;
+        transform: rotate(180deg);
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+//------------------------------------
+.item_card_menu:active{
+    .check{
+        transform: translateX(0rem);
+        & img{
+            transform: rotate(0deg);
+        }
+        &__dots{
+            &__h3{
+                opacity: 0;
+            }
+
+        }
+        
+        
+    }
+}
+//---------------------------
+
+@keyframes anim-group-card {
+     0%{ transform: translateY(10%);}
+    100%{ transform: translateY(0%);}
+}
+
+
+@keyframes anim-item-card {
+    0%{ opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{ opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+@media all and (min-width:$min-width_mobile_small_menu_card) and (max-width:$max-width_mobile_small_menu_card){
+    .container_menu_card{
+        border-radius: 2rem 2rem 0 0;
+    }
+    .menu_card{
+        &__titre{
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            & h1{
+                font-size: 1.25rem;
+            }
+            & .heart__page{
+                top: 1.45rem;
+                margin-right: 0.2rem;
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+    }
+
+    .group_card{
+        margin-bottom: 1.7rem;
+        & h2{
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+            &::after{
+                width: 2.5rem;
+                height: 0.13rem;
+                margin-top: 0.2rem;
+            }
+        }
+        & li{
+            margin-bottom:0.6rem;
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding-left: 0.6rem;
+            letter-spacing: -0.3px;
+        }
+        & h4{
+            font-size: 0.8rem;
+            padding-left: 0.6rem;
+        }
+        
+    }
+    .check{
+        height: 3.5rem;
+        transform: translateX(3rem);
+        &__green{
+            width: 3rem;
+        }
+
+        & img{
+            width: 1.1rem;
+            height: 1.1rem;
+        }
+        
+        &__price{
+            font-size: 0.75rem;
+            width: 2.2rem;
+            margin-top: 1.5rem;
+        }
+        &__dots{
+            &__h3{
+                padding-top: 0.57rem;
+               
+            }
+            &__h4{
+                top: 1.85rem;
+                padding-top: 0rem;
+                
+                
+            }
+        }
+    }
+}
+//------------------------
+//-------------------------
+@media all and (min-width:$min-width_mobile_medium_menu_card) and (max-width:$max-width_mobile_medium_menu_card){
+    .container_menu_card{
+        border-radius: 2rem 2rem 0 0;
+    }
+    .menu_card{
+        &__titre{
+            margin-top: 0.8rem;
+            margin-bottom: 0.5rem;
+            & h1{
+                font-size: 1.4rem;
+            }
+            .heart{
+                // width: 1.2rem;
+                // height: 1.2rem;
+                margin-right:0.5rem;
+            }
+            & .heart__page{
+                width: 1.35rem;
+                height: 1.35rem;
+                top: 1.9rem;
+                margin-right: 0.4rem;
+            }
+        }
+    }
+    .group_card{
+        margin-bottom: 1.7rem;
+        & h2{
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+            &::after{
+                width: 2.5rem;
+                height: 0.15rem ;
+            }
+        }
+        & li{
+            margin-bottom:0.6rem;
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 1rem;
+            font-weight: 500;
+            padding-left: 0.4rem;
+            letter-spacing: -0.5px;
+        }
+        & h4{
+            font-size: 0.9rem;
+            letter-spacing: -0.8px;
+
+
+            padding-left: 0.4rem;
+        }
+        
+    } 
+    .check{
+        height: 4rem;
+        width: auto;
+        transform: translateX(3.5rem);
+        &__green{
+            width: 3.5rem;
+        }
+        & img{
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+        
+        &__price{
+            font-size: 0.9rem;
+            width: 2.6rem;
+            margin-top: 1.6rem;
+        }
+        &__dots{
+            &__h3{
+                padding-top: 0.8rem;
+            }
+            &__h4{
+                top: 2rem;
+            }
+        }
+    }
+}
+@media all and (min-width:$min-width_mobile_large) and (max-width:$max-width_mobile_large){
+    .menu_card{
+        width:93%;
+        &__titre{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            & h1{
+                font-size: 1.8rem;
+            }
+            & .heart__page{
+                top: 3.1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .group_card{
+        margin-bottom: 3rem;
+        & h2{
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        & li{
+            margin-bottom:1.2rem;
+
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 1.2rem;
+            font-weight: 600;
+            width: 20rem;
+            margin-bottom: 0.4rem;
+        }
+        & h4{
+            display:flex;
+            width: 30rem;
+            font-size: 1.1rem;
+            flex-wrap: nowrap;
+            flex-shrink:0;
+            font-weight: 300;
+            letter-spacing: -0.2px;
+        }
+    }
+    .check{
+        height: 5rem;
+        transform: translateX(4.5rem);
+        &__green{
+            width: 4.5rem;
+        }
+        & img{
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+        &__price{
+            font-size: 1.1rem;
+            margin-top: 1.9rem;
+        }
+    }
+
+}
+@media all and (min-width:$min-width_tablette) and (max-width:$max-width_tablette){
+    .menu_card{
+        width: 95%;
+        &__titre{
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+            & h1{
+                font-size: 2.2rem;
+            }
+            & .heart__page{
+                width: 2rem;
+                height: 2rem;
+                top: 3.8rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .group_card{
+        margin-bottom: 3rem;
+        & h2{
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 1.7rem;
+            &::after{
+                width: 3.8rem;
+                height: 0.23rem;
+            }
+        }
+        & li{
+            margin-bottom:1.2rem;
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+        & h4{
+            font-size: 1.25rem;
+            font-weight: 300;
+            letter-spacing: -0.7px;
+        }
+    }
+    .check{
+        height: 5rem;
+        transform: translateX(4.7rem);
+        &__green{
+            width: 4.7rem;
+        }
+        & img{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        
+        &__price{
+            width: 3.5rem;
+            font-size: 1.2rem;
+            margin-top: 2.6rem;
+        }
+    }
+}
+@media all and (min-width:$min-width_desktop_small) and (max-width:$max-width_desktop){
+    .container_menu_card{
+        background-color: transparent;
+        width: 55%;
+        height: auto;
+    }
+    .menu_card{
+        width: 90%;
+        height: 100%;
+        z-index: 3;
+        &__titre{
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            & h1{
+                font-size: 2.4rem;
+            }
+            & .heart__page{
+                width: 2.2rem;
+                height: 2.2rem;
+                top: 2.5rem;
+                margin-right: 1.2rem;
+            }
+        }
+    }
+    .group_card{
+        margin-bottom: 3rem;
+        & h2{
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1.8rem;
+            &::after{
+                width: 4.4rem;
+                height: 0.23rem;
+            }
+        }
+        & li{
+            margin-bottom:1.2rem;
+
+        }
+    }
+    .item_card_menu{
+        & h3{
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+        & h4{
+            font-size: 1.25rem;
+            font-weight: 300;
+            letter-spacing: -0.7px;
+        }
+    }
+    .check{
+        height: 6rem;
+        transform: translateX(4.5rem);
+        &__green{
+            width: 4.5rem;
+        }
+        & img{
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+        
+        &__price{
+            margin-top: 2.1rem;
+            width: 4rem;
+            font-size: 1.4rem;
+            bottom: 1.5rem;
+            right: 2rem;
+        }
+        &__dots{
+            &__h3{
+                height: 3rem;
+                padding-top: 1.25rem;
+                font-size: 1.5rem;
+            }
+            &__h4{
+                top: 3rem;
+                font-size: 1.1rem;
+                padding-top: 0.45rem;
+            }
+        }
+    }
+}
