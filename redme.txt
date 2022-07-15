@@ -1,1 +1,2 @@
-desktop avec header a gauche et des images photoshopés
+corection :
+html  img_2__menu_2  ->  img_2 img_2__menu_2   reduire le code in scss   
