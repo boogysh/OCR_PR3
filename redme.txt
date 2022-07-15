@@ -1,6 +1,1 @@
-je rajout encore un span pour le titre h3
-html menu-2-3-4 rajouter dots
-anim check adapter 1-4 menu
-utiliser for pour l'animattion delay, item 1-9 (automatiser) 
-verifier html  validator
-verifier css validator sauf width 100% -1rem;
+how is work changer 100% - 1rem
