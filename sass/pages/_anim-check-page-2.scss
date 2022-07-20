@@ -364,7 +364,7 @@
 @media all and (min-width:$min-width_desktop_small)  and (max-width:1060px){
     .item_card_menu{
         &.item_card_menu_page_2{
-            &.item_card_menu__8:active{
+            &.item_card_menu__8:hover{
                 .check__dots{
                     opacity: 1;
                     &__h4{
@@ -375,6 +375,7 @@
         }
     }
 }
+
 
 
 

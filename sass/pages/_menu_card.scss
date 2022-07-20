@@ -632,4 +632,20 @@
             }
         }
     }
+    .item_card_menu:hover{
+        .check{
+            transform: translateX(0rem);
+            & img{
+                transform: rotate(0deg);
+            }
+            // &__dots{
+            //     &__h3{
+            //         opacity: 0;
+            //     }
+    
+            // }
+            
+            
+        }
+    }
 }

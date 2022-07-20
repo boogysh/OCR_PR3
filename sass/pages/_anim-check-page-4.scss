@@ -163,11 +163,27 @@
 
 // desktop-small
 
+
+//-----page-4 item-2 for h3
+@media all and (min-width:$min-width_desktop_small)  and (max-width:1060px){
+    .item_card_menu{
+        &.item_card_menu_page_4{
+            &.item_card_menu__2:hover{
+                .check__dots{
+                    opacity: 1;
+                    &__h3{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
 //-----page-4 item-4 for h3
 @media all and (min-width:$min-width_desktop_small)  and (max-width:1060px){
     .item_card_menu{
         &.item_card_menu_page_4{
-            &.item_card_menu__4:active{
+            &.item_card_menu__4:hover{
                 .check__dots{
                     opacity: 1;
                     &__h3{
