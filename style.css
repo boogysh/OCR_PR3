@@ -1900,15 +1900,12 @@ footer {
     font-size: 1.1rem;
     padding-top: 0.45rem;
   }
-<<<<<<< HEAD
   .item_card_menu:hover .check {
     transform: translateX(0rem);
   }
   .item_card_menu:hover .check img {
     transform: rotate(0deg);
   }
-=======
->>>>>>> 6b55ff529c2bbf0fd649516c75057c7b2f59b25d
 }
 .btn_command {
   text-align: center;
@@ -2160,7 +2157,6 @@ footer {
   }
 }
 @media all and (min-width: 993px) and (max-width: 1060px) {
-<<<<<<< HEAD
   .item_card_menu.item_card_menu_page_1.item_card_menu__4:hover .check__dots {
     opacity: 1;
   }
@@ -2181,12 +2177,6 @@ footer {
     opacity: 1;
   }
   .item_card_menu.item_card_menu_page_1.item_card_menu__9:hover .check__dots__h4 {
-=======
-  .item_card_menu.item_card_menu_page_1.item_card_menu__4:active .check__dots {
-    opacity: 1;
-  }
-  .item_card_menu.item_card_menu_page_1.item_card_menu__4:active .check__dots__h4 {
->>>>>>> 6b55ff529c2bbf0fd649516c75057c7b2f59b25d
     opacity: 1;
   }
 }
@@ -2370,17 +2360,10 @@ footer {
   }
 }
 @media all and (min-width: 993px) and (max-width: 1060px) {
-<<<<<<< HEAD
   .item_card_menu.item_card_menu_page_2.item_card_menu__8:hover .check__dots {
     opacity: 1;
   }
   .item_card_menu.item_card_menu_page_2.item_card_menu__8:hover .check__dots__h4 {
-=======
-  .item_card_menu.item_card_menu_page_2.item_card_menu__8:active .check__dots {
-    opacity: 1;
-  }
-  .item_card_menu.item_card_menu_page_2.item_card_menu__8:active .check__dots__h4 {
->>>>>>> 6b55ff529c2bbf0fd649516c75057c7b2f59b25d
     opacity: 1;
   }
 }
@@ -2567,7 +2550,6 @@ footer {
   }
 }
 @media all and (min-width: 993px) and (max-width: 1060px) {
-<<<<<<< HEAD
   .item_card_menu.item_card_menu_page_4.item_card_menu__2:hover .check__dots {
     opacity: 1;
   }
@@ -2580,12 +2562,6 @@ footer {
     opacity: 1;
   }
   .item_card_menu.item_card_menu_page_4.item_card_menu__4:hover .check__dots__h3 {
-=======
-  .item_card_menu.item_card_menu_page_4.item_card_menu__4:active .check__dots {
-    opacity: 1;
-  }
-  .item_card_menu.item_card_menu_page_4.item_card_menu__4:active .check__dots__h3 {
->>>>>>> 6b55ff529c2bbf0fd649516c75057c7b2f59b25d
     opacity: 1;
   }
 }
