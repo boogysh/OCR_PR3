@@ -3,11 +3,17 @@
     height: 9vh;
     @include flex_xy;
     position: relative;
-    & i{
-        transform: scale(1.5);
-        position:absolute;
-        left: 5%;
+    & a{
+        color: black;
+        text-decoration: none;
+        & i{
+            transform: scale(1.5);
+            position:absolute;
+            left: 5%;
+        }
+
     }
+    
     
     & h2{
         display:block;

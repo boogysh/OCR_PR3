@@ -24,6 +24,7 @@
             background-color: $primary;
             position: absolute;
             left: 0;
+            color: #fff;
         }   
         &__content{
             @include flex_y;

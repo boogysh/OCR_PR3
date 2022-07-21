@@ -80,18 +80,44 @@
     right: 2rem;
     border: none;
     background-color: transparent;
+    
     &__white{
+        position: absolute;
+        right: 0;
         width: 100%;
+        height:auto;
+        
+        
+        
     }
     &__primary{
         position: absolute;
         right: 0rem;
-        width: 100%;
-        opacity: 0.01;
-        transition:all 1s ;
-        &:active{
-            opacity: 1;
+        height:auto;
+        width:100%;
+        object-fit: cover;
+        background-color: transparent;
+        transform: scale(0);   
+        transform-origin: 50% 100%;
+        transition: transform 0.6s ease-in-out;
+    }
+    &:active{
+        .heart__primary{
+            animation: heart-anim 1s ease-in-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            // transform: scale(1);
+             //avec scale foctionne que avec hover
+            // transform: translateY(0%);
         }
+    }
+}
+@keyframes heart-anim{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
@@ -182,7 +208,8 @@
         }
     }
     .heart{
-        width: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
         margin-bottom: 1rem;
         right: 2rem;
     }
@@ -204,6 +231,7 @@
                  }
                  & h4{
                      font-size: 1.4rem;
+                     
                  }
              }
              &__new{
@@ -211,12 +239,13 @@
                  font-size: 1.4rem;
              }
          }
-     }
-     .heart{
-         width: 2rem;
-         margin-bottom: 1rem;
-         right: 2rem;
-     }
+    }
+    .heart{
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 1rem;
+        right: 2rem;
+    }
 }
 
 @media all and (min-width:$min-width_desktop_small){
@@ -256,6 +285,7 @@
                 }
                 & h4{
                     font-size: 1.4rem;
+                    padding-bottom: 1.5rem;
                 }
             }
             &__new{
@@ -267,15 +297,25 @@
 
     .heart{
          width: 1.8rem;
-         margin-bottom: 1rem;
-         right: 2rem;
+         height: 1.8rem;
+         margin-bottom: 4rem;
+        //  right: 2rem;
          padding-top: 1.9rem;
+         &__white{
+            width: 1.8rem;
+            height: 1.8rem;
+            // right: 2rem;
+         }
          &__primary{
-            
-            &:hover{
-                opacity: 1;
+            width: 1.8rem;
+            height: 1.8rem;
+            right: 0.4rem;
+         }
+
+         &:hover{
+            .heart__primary{
+                 transform: scale(1.0);
             }
-            
         }
     }
     
@@ -294,16 +334,27 @@
         }
     }
     .heart{
-        width: 2rem;
-        margin-bottom: 1rem;
+        width: 2rem ;
+        height: 2rem ;
+        margin-bottom: 4rem;
         right: 2rem;
-        &__primary{
-           
-            &:hover{
-                opacity: 1;
-            }
-            
+        &__white{
+        width: 2rem;
+        height: 2rem;
         }
+        &__primary{
+            width: 2rem;
+            height: 2rem;
+            right: 0.2rem;
+        }
+        &:hover{
+            .heart__primary{
+                //  transform: scale(1.0);
+                transform: translateY(0%);
+
+            }
+        }
+        
     }
     
 }
