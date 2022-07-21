@@ -22,14 +22,15 @@
             padding-left: 0.5rem;
             z-index: 0;
         }
-        & .heart__page{
-            top:2.5rem;
-            margin-right: 0.5rem;
-            width: 1.6rem;
-            height: 1.6rem;
-
-        }
+        
     }
+}
+.heart__page{
+    top:2.6rem;
+    margin-right: 0.3rem;
+    width: 1.4rem;
+    height: 1.4rem;
+
 }
 
 //------------------------------------------------
@@ -276,13 +277,14 @@
             & h1{
                 font-size: 1.25rem;
             }
-            & .heart__page{
-                top: 1.45rem;
-                margin-right: 0.2rem;
-                width: 1.2rem;
-                height: 1.2rem;
-            }
+            
         }
+    }
+    .heart__page{
+        top: 1.5rem;
+        margin-right: 0.2rem;
+        width: 1.2rem;
+        height: 1.2rem;
     }
 
     .group_card{
@@ -357,18 +359,13 @@
             & h1{
                 font-size: 1.4rem;
             }
-            .heart{
-                // width: 1.2rem;
-                // height: 1.2rem;
-                margin-right:0.5rem;
-            }
-            & .heart__page{
-                width: 1.35rem;
-                height: 1.35rem;
-                top: 1.9rem;
-                margin-right: 0.4rem;
-            }
         }
+    }
+    .heart__page{
+        width: 1.25rem;
+        height: 1.25rem;
+        top: 1.9rem;
+        margin-right: 0.4rem;
     }
     .group_card{
         margin-bottom: 1.7rem;
@@ -436,11 +433,14 @@
             & h1{
                 font-size: 1.8rem;
             }
-            & .heart__page{
-                top: 3.1rem;
-                margin-right: 1rem;
-            }
+           
         }
+    }
+    .heart__page{
+        top: 3rem;
+        margin-right: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
     .group_card{
         margin-bottom: 3rem;
@@ -496,13 +496,14 @@
             & h1{
                 font-size: 2.2rem;
             }
-            & .heart__page{
-                width: 2rem;
-                height: 2rem;
-                top: 3.8rem;
-                margin-right: 1rem;
-            }
+            
         }
+    }
+    .heart__page{
+        width: 2rem;
+        height: 2rem;
+        top: 3.7rem;
+        margin-right: 1rem;
     }
     .group_card{
         margin-bottom: 3rem;
@@ -565,13 +566,14 @@
             & h1{
                 font-size: 2.4rem;
             }
-            & .heart__page{
-                width: 2.2rem;
-                height: 2.2rem;
-                top: 2.5rem;
-                margin-right: 1.2rem;
-            }
         }
+    }
+    .heart__page{
+        width: 2.2rem;
+        height: 2.2rem;
+        top:4.3rem;
+        margin-right: 2.2rem;
+        
     }
     .group_card{
         margin-bottom: 3rem;
@@ -649,3 +651,4 @@
         }
     }
 }
+
