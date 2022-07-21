@@ -824,10 +824,8 @@ main {
   position: absolute;
   right: 2rem;
   border: none;
+  background-color: transparent;
   overflow: hidden;
-}
-.heart:active .heart__primary, .heart__page:active .heart__primary {
-  transform: translateY(0%);
 }
 .heart__white {
   position: absolute;
@@ -842,9 +840,12 @@ main {
   height: 100%;
   width: 100%;
   background-color: transparent;
-  transform: translateY(110%);
+  transform: translateY(-110%);
   transition: all 0.5s ease-in-out;
   z-index: 4;
+}
+.heart:active .heart__primary, .heart__page:active .heart__primary {
+  transform: translateY(0%);
 }
 
 @media all and (min-width: 200px) and (max-width: 319px) {
@@ -1014,6 +1015,7 @@ main {
     margin-bottom: 4rem;
     right: 2rem;
     top: 1.5rem;
+    overflow: hidden;
   }
   .heart__white {
     width: 100%;
