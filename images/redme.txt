@@ -1,0 +1,2 @@
+J'ai redenommé heart-2.png > heart-2-1.png
+j'ai rajouté un carré de la meme couleur  heart-2.png

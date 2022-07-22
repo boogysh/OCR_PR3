@@ -840,12 +840,12 @@ main {
   height: 100%;
   width: 100%;
   background-color: transparent;
-  transform: translateY(-110%);
-  transition: all 0.5s ease-in-out;
+  transform: translateX(-110%);
+  transition: all 0.8s ease-in-out;
   z-index: 4;
 }
 .heart:active .heart__primary, .heart__page:active .heart__primary {
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 
 @media all and (min-width: 200px) and (max-width: 319px) {
